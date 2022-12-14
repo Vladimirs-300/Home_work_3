@@ -6,7 +6,7 @@ from random import sample
 
 def list_rand_nums(count):
     if count < 0:
-        print("Negative value of the number of numbers!")
+        print("Введите положительно число!")
         return []
 
     list_nums = sample(range(1, count * 2), count)
@@ -25,6 +25,6 @@ def prod_pairs(list_nums: list):
     return res_list
 
 
-all_list = list_rand_nums(int(input("Number of numbers: ")))
+all_list = list_rand_nums(int(input("Введите длину списка: ")))
 print(all_list)
 print(prod_pairs(all_list))
